@@ -1,0 +1,609 @@
+{% load static %}
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+/* utility classes */
+
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.1rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Baloo bhai', cursive;
+    font-size: 2.1rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px;
+    background-color: #645CBB;
+    border: 3px solid white;
+    color: white;
+    margin: 10px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Baloo Bhai', cursive;
+    padding: 20px;
+}
+
+/* navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    background-color: #645CBB;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo {
+    margin: 10px 30px;
+}
+
+#logo img {
+    height: 49px;
+    margin: 3px 10px;
+    border-radius: 50%;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.15rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: #A084DC;
+}
+
+
+.social-icon__item1{
+  list-style: none;
+  margin-left: 600px;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  display: inline-block;
+  margin: 0px 0px;
+}
+
+
+/* home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 650px;
+    justify-content:center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('images/Hero-Farm.webp') no-repeat bottom center/cover;
+    height: 700px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#home h1 {
+    font-size: 800%;
+    text-align: center;
+    background-color: #FCE2DB;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#home h2 {
+    font-size: 200%;
+    color: white;
+}
+
+/* about us section */
+#about-container h1{
+    font-family: 'Baloo bhai', cursive;
+    font-size: 3.3rem;
+    padding: 0px;
+    margin-bottom: -50px;
+}
+
+#about{
+    position: relative;
+    margin: 34px;
+    opacity: 0.9;
+    z-index: -2;
+}
+
+#about .box{
+    padding: 50px 30px;
+    margin: 80px 150px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px 5px #A084DC;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    background: url('images/sunny-sky.jpg') no-repeat center center/cover;
+}
+
+#about img{
+    width: 98%;
+    height: 90%;
+    border-radius: 20%;
+    margin-right: 200px;
+}
+
+.img2{
+    width: 90%;
+}
+
+.box-1{
+    margin: 20px;
+}
+.box-1 h2{
+    text-align: left;
+    background-color: #ffb7cd;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.box-1 p{
+    text-align: left;
+}
+
+
+.box-2{
+    margin: 20px;
+}
+.box-2 h2{
+    text-align: right;
+    background-color: #ffb7cd;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.box-2 p{
+    text-align: right;
+}
+
+/* services section */
+#services{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.service-box{
+    padding: 40px;
+    margin: 2px 20px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 5px #A084DC;
+    background: url('images/sunny-sky.jpg') no-repeat center center/cover;
+    opacity: 0.9;
+    z-index: -2;
+}
+
+.service-box img{
+   height: 200px;
+   align-items: center;
+   border-radius: 30px;
+}
+
+#services .service-box p{
+    font-family: 'Baloo bhai', cursive;
+}
+
+.service-img{
+    align-items: center;
+    margin-left: 8%;
+}
+
+.service-box h2{
+    background-color: #ffb7cd;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+/* Location Section */
+#client-section{
+    position: relative;
+    z-index: -3;
+}
+
+#clients::before{
+ content: "";
+ position: absolute;
+ background: url('images/milk farm.jpg');
+ width: 100%;
+ height: 50%;
+ z-index: -3;
+ opacity: 0.9;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+    flex-direction: column;
+    color: white;
+}
+
+/* footer section */
+
+/* footer starts */
+.footer {
+    position: relative;
+    width: 100%;
+    background: #FF8FB1;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+
+  .menu__link:hover {
+    opacity: 1;
+  }
+
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+/* for about.html */
+
+/* intro picture */
+
+.introPic1 {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 650px;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 100px;
+    background: url('images/Hero-Farm.webp') no-repeat bottom center/cover;
+}
+
+.introPic1 h1{
+    font-size: 450%;
+}
+
+.introPic1::before {
+    content: "";
+    position: absolute;
+    background: url('images/Hero-Farm.webp') no-repeat bottom center/cover;
+    height: 700px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -4;
+    opacity: 1;
+}
+  .centered1 {
+    position: absolute;
+    top: 90%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    background-color: #FF8FB1;
+    padding: 30px;
+    margin-bottom: 80px;
+  }
+
+  .introPic1 h3 {
+    margin-left: 10px;
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: bold;
+  }
+
+  .introPic1 h4 {
+    margin-left: 10px;
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: bold;
+  }
+
+  /* mission and vision starts */
+
+.col-12{
+    border: 10px;
+    margin: 10px;
+    padding: 30px;
+    background:url('images/sunny-sky.jpg') no-repeat center center/cover;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.para{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px;
+    font-size:110%;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 2px;
+}
+
+.blog_main_container h2{
+    background-color: #ffb7cd;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: block;
+}
+
+.list{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px;
+    font-size:110%;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#about-container h3{
+    text-align: right;
+    margin-bottom: -30px;
+}
+
+#about-container h4{
+    text-align: left;
+    margin-bottom: -30px;
+}
+
+/* services.html starts */
+
+
+.card {
+    display: flex;
+    align-items: left;
+    width: 50vw;
+    max-width: 650px;
+    padding: 50px 30px 30px 20px;
+    margin-left: 30%;
+    margin-top: 40px;
+    border: 3px solid black;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 5px grey;
+
+  }
+
+  .card img {
+    max-width: 600px;
+    width: 50vw;
+    height: 300px;
+
+  }
+
+  .card i {
+    font-size: 250%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 50px;
+  }
+
+  .card h4 {
+    font-family: 'Baloo bhai', cursive;
+    font-size:130%;
+  }
+
+  /* team.html starts */
+
+
+.d-block {
+    height: 650px;
+    padding: 0px;
+    scroll-behavior:smooth;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+}
+
+.carousel-item h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+.carousel-item p{
+    font-size: 130%;
+    font-weight: bolder;
+}
+
+.carousel-caption{
+    background-color: #FF8FB1;
+    border-radius: 20px;
+    opacity: 0.85;
+}
+
+#services1{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.service-box1{
+    padding: 40px;
+    margin: 2px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: url( 'images/sunny-sky.jpg' ) no-repeat center center/cover;
+    opacity: 0.85;
+    z-index: -2;
+}
+
+.service-box1 img{
+   height: 200px;
+   align-items: center;
+   border-radius: 50%;
+}
+
+#services1 .service-box1 p{
+    font-family: 'Baloo bhai', cursive;
+    color: white;
+}
+
+.service-box1 h2{
+    background-color: #FF8FB1;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: black;
+}
+
+/* contact.html starts */
+
+.contact_bg{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCE2DB;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .option {
+  font-weight:normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 2em;
+  }
+
+  input[type=text], input[type=address], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=text]:focus, input[type=address]:focus {
+    outline: none;
+  }
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  .registerbtn {
+    background-color:#FF8FB1;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    width: 100%;
+    opacity: 0.9;
+    position: relative;
+  }
+  .registerbtn:hover {
+    opacity: 1;
+  }
+.map-responsive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+.contact-container{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCE2DB;
+    border-radius: 20px;
+    position: relative;
+    z-index: -3;
+}

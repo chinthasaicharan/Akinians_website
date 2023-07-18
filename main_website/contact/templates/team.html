@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- intro picture -->
+    <div class="introPic1">
+        <div class="centered1">
+          <h1 class="h-primary">Our Team.</h1>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iste voluptates sapiente dolor quia sit? Blanditiis quam sint optio ipsam similique dolores culpa perspiciatis voluptas, cumque autem sit nulla id!</h3>
+          <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut mollitia ratione nihil eius, dolorem ad. Vero nulla numquam, ipsam culpa a maiores perspiciatis molestias.</h3>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quasi excepturi fugiat? Omnis quod eligendi quasi quidem recusandae expedita quaerat perspiciatis repellendus. Architecto molestias cumque, consequatur perferendis commodi vero adipisci!</h4>
+        </div>
+      </div>
+  <!-- intro picture ends -->
+
+    <!-- our story section starts -->
+    <section id="about-container">
+        <h1 class="h-primary center" >- Our Management -</h1>
+        <div id="about">
+            <div class="box">
+                <div class="img1"><img src="img/ambica.png" alt=""></div>
+                <div class="box-1" style="overflow: hidden;">
+                    <h2 class="h-secondary center ">Mrs.Ambica Thatikonda</h2>
+                    <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum tempore aliquid dolorem labore a commodi culpa accusantium deleniti dolores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, aliquid?</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img1"><img src="img/kartheek.jpeg" alt=""></div>
+                <div class="box-1" style="overflow: hidden;">
+                    <h2 class="h-secondary center ">Mr.Kartheek Thatikonda</h2>
+                    <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum tempore aliquid dolorem labore a commodi culpa accusantium deleniti dolores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, aliquid?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our story section ends -->
+
+<!-- developers section starts-->
+<section id="services-container1">
+    <h1 class="h-primary center">- Our Developers -</h1>
+    <div id="services1">
+        <div class="service-box1">
+            <img src="img/customer1.jpg" alt="">
+            <h2 class="h-secondary center">Developer-1</h2>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, </p>
+        </div>
+        <div class="service-box1">
+            <img src="img/customer1.jpg" alt="">
+            <h2 class="h-secondary center">Developer-2</h2>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="service-box1">
+            <img src="img/customer1.jpg" alt="">
+            <h2 class="h-secondary center">Developer-3</h2>
+            <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</section>
+
+<!-- developers section ends -->
+
+<!-- carousel starts -->
+<h1 class="h-primary center">- Our Journey -</h1>
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Hero-Farm.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h2 class="h-primary">First slide label</h2>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/milk farmer.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h2 class="h-primary">Second slide label</h2>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/wisconsin-ga724e8be8_1280.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h2 class="h-primary">Third slide label</h2>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <!-- carousel ends  -->
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <!-- intro picture -->
+<div class="introPic1">
+    <div class="centered1">
+      <h1 class="h-primary">Contact Us.</h1>
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iste voluptates sapiente dolor quia sit? Blanditiis quam sint optio ipsam similique dolores culpa perspiciatis voluptas, cumque autem sit nulla id!</h3>
+      <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut mollitia ratione nihil eius, dolorem ad. Vero nulla numquam, ipsam culpa a maiores perspiciatis molestias.</h3>
+    </div>
+  </div>
+  <!-- intro picture ends -->
+
+  <!-- contact form starts -->
+
+  <h2 class="h-secondary center">- Get In Touch -</h2>
+<!-- contact form begins -->
+
+<div class="contact_bg">
+<form method="post" onsubmit="showSuccessMessage()" id="contact-form">
+  {% csrf_token %}
+<!--  {{ form.as_p }}-->
+    <div >
+    <b>{{ form.full_name.label_tag }}</b>
+    {{ form.full_name }}
+        <b>{{ form.phone.label_tag }}</b>
+
+    {{ form.phone }}
+        <b>{{ form.email.label_tag }}</b>
+
+    {{ form.email }}
+        <br>
+        <b>{{ form.message.label_tag }}</b>
+    {{ form.message }}
+    <button type="submit" class="registerbtn">Send</button>
+
+    </div>
+
+</form>
+    <script>
+$("#contact-form").on('submit', function(event) {
+showSuccessMessage();
+
+      }
+</script>
+
+</div>
+
+
+  <!-- contact form ends -->
+
+  <!-- map starts  -->
+
+
+  <!-- map ends -->
+  <h2 class="h-secondary center">- Find Us Here -</h2>
+  <div class="map-responsive">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.3081234380093!2d78.39402752922693!3d17.49641167831051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f26ecf61bf%3A0xfd2f01bf400aa5cd!2sMumbai%20Hwy%2C%20Jawaharlal%20Nehru%20Technological%20University%2C%20Samatha%20Nagar%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500085!5e0!3m2!1sen!2sin!4v1655750196785!5m2!1sen!2sin"
+      width="1000" height="500" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+<br>
+{% endblock %}
