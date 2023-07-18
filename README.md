@@ -2,7 +2,7 @@
 
 # THIS IS THE WEBSITE OF AKINIANS WEBSITE 
 
-# please provide credit is used any source code
+# please provide credit if any source code is used
 
 # Project Developers:
    Web Developers :  V Mohan Vamshi & N. Revanth Sai
